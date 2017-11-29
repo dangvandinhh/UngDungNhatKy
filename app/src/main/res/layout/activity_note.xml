@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6A6A"
+    android:orientation="vertical"
+    tools:context=".NoteActivity">
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dinhdang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_et_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="italic"
+        android:hint="Tiêu đề"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/dinhdangnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:textStyle="italic"
+        android:id="@+id/note_et_content"
+        android:layout_below="@+id/note_et_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/note_et_title"
+        android:layout_alignEnd="@+id/note_et_title"
+        android:layout_alignParentBottom="true"
+        android:hint="Nhập nội dung"
+        android:gravity="top"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dinhdang"
+        android:text="Thêm hình ảnh" />
+
+    />
+</RelativeLayout>
+
